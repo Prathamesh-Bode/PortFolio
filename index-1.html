@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathamesh Bode - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style..css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<ul class="navlist">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+</ul>
+<div class="Portfolio-container">
+    <div class="animated-bg"></div>
+    <div class="middle-container">
+        <div class="icons animated-icons">
+            <a href="https://github.com/Prathamesh-Bode" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/prathamesh-bode/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prathamesh.bode@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
+    <div class="left-container">
+        <div class="content animated-content">
+            <p class="intro animated-text">Hi! I Am <span class="highlight">Prathamesh Bode</span></p>
+            <h1 class="animated-title"><span id="typewriter"></span></h1>
+            <p class="detail animated-detail">Passionate about creating beautiful, functional, and user-friendly web applications. I specialize in modern web technologies and love turning complex problems into simple, elegant solutions. With expertise in both frontend and backend development, I bring ideas to life through clean code and innovative design.</p>
+            <div class="btn-container animated-btns">
+                <button onclick="scrollToSection('contact')">Hire Me</button>
+                <button onclick="scrollToSection('projects')">View Projects</button>
+            </div>
+        </div>
+    </div>
+    <div class="right-container">
+        <img src="image/PicsArt_08-13-06.35.35.jpg" alt="Prathamesh Bode" class="profile-photo animated-photo" />
+    </div>
+    <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="projects-container">
+        <div class="projects-header">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I've created to showcase my skills and passion for web development.</p>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Spotify Clone Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder spotify-placeholder">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Spotify Clone</h3>
+                    <p>A full-featured music streaming application built with modern web technologies. Features include user authentication, playlist management, music playback, and a responsive design that mimics the original Spotify interface.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn live-btn">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/Prathamesh-Bode/Spotify.git" class="project-btn code-btn" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Clone Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder youtube-placeholder">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>YouTube Clone</h3>
+                    <p>A video sharing platform clone with features like video upload, user channels, comments, likes/dislikes, and video recommendations. Includes a modern UI with dark/light theme support.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Material-UI</span>
+                        <span class="tech-tag">YouTube Clone</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn live-btn">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="project-btn code-btn">
+                            <i class="fa-brands fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Shop Website Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder coffee-placeholder">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Coffee Shop Website</h3>
+                    <p>A beautiful and functional website for a local coffee shop featuring online ordering, menu display, location information, and customer testimonials. Built with a focus on user experience and mobile responsiveness.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-btn live-btn">
+                            <i class="fa-solid fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="project-btn code-btn">
+                            <i class="fa-brands fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a dedicated web developer with a passion for creating exceptional digital experiences. My journey in web development started with curiosity and has evolved into a professional career focused on building scalable, maintainable, and user-centric applications.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                <div class="skills">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="services-container">
+        <h2>Services I Offer</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Custom web applications built with modern technologies and best practices.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first designs that work perfectly on all devices and screen sizes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Backend Development</h3>
+                <p>Robust server-side solutions with secure APIs and database management.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-wrench"></i>
+                <h3>Maintenance & Support</h3>
+                <p>Ongoing support, updates, and maintenance for your web applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's work together!</h3>
+                <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>prathameshbode@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 9579614267</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Your Nagpur, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    element.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Add active class to navigation based on scroll position
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navlist a');
+    
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current || 
+            (current === '' && link.getAttribute('href') === '#')) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Typewriter effect for animated title
+const typewriterTexts = ["Full Stack Web Developer", "UI/UX Enthusiast", "Problem Solver", "Tech Explorer"];
+let twIndex = 0, charIndex = 0, isDeleting = false;
+const twElement = document.getElementById('typewriter');
+function typeWriter() {
+    if (!twElement) return;
+    const current = typewriterTexts[twIndex];
+    if (isDeleting) {
+        twElement.textContent = current.substring(0, charIndex--);
+        if (charIndex < 0) {
+            isDeleting = false;
+            twIndex = (twIndex + 1) % typewriterTexts.length;
+            setTimeout(typeWriter, 600);
+        } else {
+            setTimeout(typeWriter, 40);
+        }
+    } else {
+        twElement.textContent = current.substring(0, charIndex++);
+        if (charIndex > current.length) {
+            isDeleting = true;
+            setTimeout(typeWriter, 1200);
+        } else {
+            setTimeout(typeWriter, 90);
+        }
+    }
+}
+typeWriter();
+// Animate on load
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.animated-content').classList.add('fade-in-left');
+    document.querySelector('.animated-photo').classList.add('fade-in-up');
+    document.querySelector('.animated-icons').classList.add('fade-in-icons');
+});
+
+// Dark/Light mode toggle
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+</script>
+</body>
+</html>
